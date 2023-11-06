@@ -8,7 +8,4 @@ import org.springframework.context.annotation.Configuration;
 @ConditionalOnProperty(value = "api.client.url", matchIfMissing = false)
 @EnableFeignClients(basePackageClasses = ApiClient.class)
 public class FeignClientAutoConfiguration {
-    public FeignClientAutoConfiguration() {
-        System.out.println("test");
-    }
 }
