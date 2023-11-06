@@ -4,9 +4,7 @@ services:
     image: postgres:16-alpine
     ports:
       - "${POSTGRES_PORT}:5432"
-    command: |
-      postgres 
-      -c shared_preload_libraries=pg_stat_statements,uuid-ossp
+    command: postgres
     restart: always
     environment:
       POSTGRES_USER: ${POSTGRES_USER}

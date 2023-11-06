@@ -1,7 +1,7 @@
 POST http://localhost:9090/realms/alpha/protocol/openid-connect/token
 Content-Type: application/x-www-form-urlencoded
 
-username=alice&password=alice&grant_type=password&client_id=test&client_secret=QIcq154g8vdKcIRMdlvtaFA5270Y1ZxW
+username=alice&password=alice&grant_type=password&client_id=test&client_secret=qGKwG32AvDhbjX8rYXZ3Bp3h65UdDmcY
 
 > {%
     client.global.set("auth_token", response.body["access_token"]);
