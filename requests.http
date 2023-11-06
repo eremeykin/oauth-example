@@ -1,7 +1,7 @@
 POST http://localhost:9090/realms/alpha/protocol/openid-connect/token
 Content-Type: application/x-www-form-urlencoded
 
-username=alice&password=alice&grant_type=password&client_id=test&client_secret=qGKwG32AvDhbjX8rYXZ3Bp3h65UdDmcY
+username=alice&password=alice&grant_type=password&client_id=http-service&client_secret=KoDfc8VqMgMgPNUXqpIlIutBgwC0RFiq
 
 > {%
     client.global.set("auth_token", response.body["access_token"]);
@@ -12,3 +12,8 @@ username=alice&password=alice&grant_type=password&client_id=test&client_secret=q
 
 GET http://localhost:8080/playlist
 Authorization: Bearer {{auth_token}}
+
+####
+
+GET http://localhost:8081/recommendation
+

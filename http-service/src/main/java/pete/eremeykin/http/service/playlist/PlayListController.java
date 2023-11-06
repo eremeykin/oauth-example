@@ -7,9 +7,11 @@ import org.springframework.web.bind.annotation.RestController;
 import pete.eremeykin.service.api.GenericResponse;
 import pete.eremeykin.service.api.Playlist;
 
+import static pete.eremeykin.service.api.client.ApiClient.PLAYLIST_ENDPOINT;
+
 @AllArgsConstructor
 @RestController
-@RequestMapping("playlist")
+@RequestMapping(PLAYLIST_ENDPOINT)
 class PlayListController {
     private final PlaylistService service;
 
