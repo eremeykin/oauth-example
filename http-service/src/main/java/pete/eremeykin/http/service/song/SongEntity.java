@@ -15,7 +15,7 @@ import java.util.UUID;
 @Entity
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
 @Table(name = SongEntity.PLAYLISTS)
-public class SongEntity {
+class SongEntity {
     protected static final String PLAYLISTS = "songs";
 
     @Id

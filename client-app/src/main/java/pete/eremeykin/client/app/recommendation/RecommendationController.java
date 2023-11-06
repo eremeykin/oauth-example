@@ -13,7 +13,7 @@ import java.util.Collections;
 @RestController
 @AllArgsConstructor
 @RequestMapping("recommendation")
-public class RecommendationController {
+class RecommendationController {
     private final ApiClient apiClient;
 
     @GetMapping
