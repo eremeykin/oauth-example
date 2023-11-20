@@ -10,10 +10,29 @@ username=alice&password=alice&grant_type=password&client_id=http-service&client_
 
 ####
 
-GET http://localhost:8080/playlist
+GET http://localhost:10080/playlist
 Authorization: Bearer {{auth_token}}
 
 ####
 
-GET http://localhost:8081/recommendation
+GET http://localhost:10081/recommendation
+
+####
+
+GET http://localhost:10080/playlist
+
+
+####
+
+GET http://localhost:10081/recommendation
+
+####
+
+POST http://localhost:7090/realms/alpha/login-actions/authenticate?session_code=oejK0M0H0P3iYMDqN69IaiVo0Q1PyFb2JqZiso1FHq0&execution=3c12789c-0ca5-4ba5-b588-253470ab2648&client_id=client-app&tab_id=xC0Qztw3thM
+Content-Type: application/x-www-form-urlencoded
+
+username=alice&password=alice&credentialId=
+
+###
+
 

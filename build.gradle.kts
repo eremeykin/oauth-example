@@ -74,11 +74,7 @@ project(":http-service") {
 project(":client-app") {
     dependencies {
         implementation(project(":service-api"))
+        implementation("org.springframework.boot:spring-boot-starter-oauth2-client")
+        implementation("org.springframework:spring-webflux")
     }
 }
-
-//        implementation("org.springframework.boot:spring-boot-starter-data-jpa")
-//        implementation("org.springframework.boot:spring-boot-starter-oauth2-client")
-//        implementation("org.springframework.boot:spring-boot-starter-oauth2-resource-server")
-//        implementation("org.springframework.boot:spring-boot-starter-security")
-//        testImplementation("org.springframework.security:spring-security-test")
